@@ -1,0 +1,25 @@
+{
+	"name": "Applicants",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"mock-server": "json-server --watch mock/db.json",
+		"start": "node node_modules/react-native/local-cli/cli.js start"
+	},
+	"dependencies": {
+		"lodash": "^4.17.4",
+		"react": "~15.4.1",
+		"react-native": "0.42.3",
+		"react-native-router-flux": "^3.38.0",
+		"react-redux": "^5.0.3",
+		"redux": "^3.6.0",
+		"redux-thunk": "^2.2.0",
+		"reselect": "^3.0.0"
+	},
+	"devDependencies": {
+		"babel-preset-react-native": "1.9.1",
+		"json-server": "^0.9.6",
+		"react-test-renderer": "~15.4.1",
+		"redux-logger": "^3.0.0"
+	}
+}

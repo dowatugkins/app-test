@@ -1,0 +1,116 @@
+{
+  "applicants": [{
+    "id": 1,
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "coverLetter": "Aliquam ut nunc eu augue volutpat porta ullamcorper sed."
+  }, {
+    "id": 2,
+    "firstName": "Erica",
+    "lastName": "Hayfied",
+    "email": "erica@example.com",
+    "coverLetter": "Pellentesque habitant morbi tristique senectus."
+  }, {
+    "id": 3,
+    "firstName": "Lex",
+    "lastName": "Luther",
+    "email": "lex@example.com",
+    "coverLetter": "Phasellus fermentum, neque nec posuere hendrerit."
+  }, {
+    "id": 4,
+    "firstName": "Bruce",
+    "lastName": "Wayne",
+    "email": "bruce@example.com",
+    "coverLetter": "Vestibulum varius purus non convallis ultricies."
+  }, {
+    "id": 5,
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "email": "peter@example.com",
+    "coverLetter": "Aenean faucibus augue id justo viverra, eget."
+  }, {
+    "id": 6,
+    "firstName": "Diana",
+    "lastName": "Prince",
+    "email": "diana@prince.com",
+    "coverLetter": "Nam dolor urna, imperdiet ac ipsum quis, aliquet laoreet."
+  }],
+
+  "skills": [{
+    "id": 1,
+    "description": "PHP",
+    "experienceInYears": 3,
+    "applicantId": 1
+  }, {
+    "id": 2,
+    "description": "JavaScript",
+    "experienceInYears": 3,
+    "applicantId": 1
+  }, {
+    "id": 3,
+    "description": "Objective-C",
+    "experienceInYears": 10,
+    "applicantId": 1
+  }, {
+    "id": 4,
+    "description": "Objective-C",
+    "experienceInYears": "3 Years",
+    "applicantId": 2
+  }, {
+    "id": 5,
+    "description": "Karate",
+    "experienceInYears": 20,
+    "applicantId": 2
+  }, {
+    "id": 6,
+    "description": "Ruby",
+    "experienceInYears": 20,
+    "applicantId": 4
+  }, {
+    "id": 7,
+    "description": "Apothecary",
+    "experienceInYears": 15,
+    "applicantId": 4
+  }, {
+    "id": 8,
+    "description": "Speak German",
+    "experienceInYears": 5,
+    "applicantId": 4
+  }, {
+    "id": 9,
+    "description": "Swim",
+    "experienceInYears": 5,
+    "applicantId": 4
+  }, {
+    "id": 10,
+    "description": "Run",
+    "experienceInYears": 5,
+    "applicantId": 4
+  },  {
+    "id": 11,
+    "description": "Writer",
+    "experienceInYears": 5,
+    "applicantId": 4
+  }, {
+    "id": 12,
+    "description": "Fighting Crime",
+    "experienceInYears": 33,
+    "applicantId": 4
+  }, {
+    "id": 13,
+    "description": "Weaving Webs",
+    "experienceInYears": 3,
+    "applicantId": 5
+  }, {
+    "id": 14,
+    "description": "Spidey Senses",
+    "experienceInYears": 3,
+    "applicantId": 5
+  }, {
+    "id": 15,
+    "description": "Olympic Lifting",
+    "experienceInYears": 3,
+    "applicantId": 6
+  }]
+}
