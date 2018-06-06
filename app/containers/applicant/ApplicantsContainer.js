@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import { ListView } from 'react-native';
-
 import { Actions } from 'react-native-router-flux';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-
 import { get } from 'lodash';
 
 import { Card, CardBody, CardFooter } from '../card';
@@ -14,7 +13,6 @@ class ApplicantRow extends Component {
             {this.props.applicant.firstName} {}
             {this.props.applicant.lastName}
           </Text>
-
           <Text style={styles.coverLetter}>
             {this.props.applicant.coverLetter}
           </Text>
@@ -26,14 +24,12 @@ class ApplicantRow extends Component {
               {get(this.props.applicant, 'skills.length', 0)}
             </Text>
           </View>
-
           <View style={styles.col}>
             <Text style={styles.label}>TOP SKILL</Text>
             <Text style={styles.skill}>
               {/* TOP SKILL SHOULD BE SHOWN HERE */}
             </Text>
           </View>
-
         </CardFooter>
       </Card>
     );

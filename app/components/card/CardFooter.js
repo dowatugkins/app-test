@@ -1,9 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-const CardFooter = ({ style, ...restOfProps }) => (
-  <View style={[styles.cardFooter, style]} {...restOfProps} />
-);
+const CardFooter = ({ style, ...restOfProps }) =>
+  <View style={[styles.cardFooter, style]} {...restOfProps} />;
 
 const styles = StyleSheet.create({
   cardFooter: {
