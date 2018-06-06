@@ -22,14 +22,12 @@ class ApplicantsList extends Component {
         <CardHeader>
           <Text style={styles.cardHeading}>Applicant Management</Text>
         </CardHeader>
-
         <CardBody>
           <Text style={styles.cardText}>
             Here at ACME we got a large amount of applicants. Easily view, edit, remove, and {}
             add applicants from this screen!
           </Text>
         </CardBody>
-
         <CardFooter>
           <Button
             title={`Sort Applicants (Order: ${this.props.sortOrder})`}
@@ -49,7 +47,6 @@ class ApplicantsList extends Component {
           renderHeader={this.renderHeader}
           enableEmptySections
         />
-
         {this.props.isFetching && <ActivityIndicator style={styles.centered} size="large" />}
       </View>
     );
@@ -57,10 +54,13 @@ class ApplicantsList extends Component {
 }
 
 ApplicantsList.propTypes = {
+  // ListView dataSource
   dataSource: PropTypes.instanceOf(ListView.DataSource).isRequired,
 
+  // Bool to disclose when the data is fetching
   isFetching: PropTypes.bool,
 
+  // Callback when sort button is pressed
   onSortPress: PropTypes.func,
 };
 

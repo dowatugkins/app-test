@@ -2,29 +2,34 @@ import { defaultMemoize, createSelector } from 'reselect';
 import { get, filter, map, sortBy } from 'lodash';
 
 /**
+ * @param {object} state the current state slice to fetch from
  * @return {boolean} a value indicating whether the applicants redux state slice is fetching.
  */
-const isApplicantsFetching = state => get(state, 'applicant.fetching', false);
+const isApplicantsFetching = state => defaultMemoize(get(state, 'applicant.fetching', false));
 
 /**
+ * @param {object} state the current state slice to fetch from
  * @return {boolean} a value indicating whether the skills redux state slice is fetching.
  */
-const isSkillsFetching = state => get(state, 'skill.fetching', false);
+const isSkillsFetching = state => defaultMemoize(get(state, 'skill.fetching', false));
 
 /**
+ * @param {object} state the current state slice to fetch from
  * @return {array} ordered collection of applicant ids.
  */
-const getApplicantIds = state => get(state, 'applicant.applicantIds', []);
+const getApplicantIds = state => defaultMemoize(get(state, 'applicant.applicantIds', []));
 
 /**
+ * @param {object} state the current state slice to fetch from
  * @return {object} collection of applicants indexed by their id.
  */
-const getApplicantsById = state => get(state, 'applicant.applicantsById', {});
+const getApplicantsById = state => defaultMemoize(get(state, 'applicant.applicantsById', {}));
 
 /**
+ * @param {object} state the current state slice to fetch from
  * @return {object} current sort order.
  */
-const getSortOrder = state => get(state, 'applicant.sortOrder', 'NONE');
+const getSortOrder = state => defaultMemoize(get(state, 'applicant.sortOrder', 'NONE'));
 
 /**
  * @return {array} ordered collection of applicants.

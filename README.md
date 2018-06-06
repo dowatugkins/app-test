@@ -1,15 +1,14 @@
 # README
 
-This assessment helps us guage your ability to code, work in an existing code 
-base, and follow guidelines. It's estimated that this assessment will take 
-about two hours to complete.
+This assessment helps us gauge your ability to code, work in an existing codebase, and follow guidelines. It's estimated that this assessment will take about two hours to complete.
 
 ## Setup
 
 Before you can start you'll need to setup the project.
 
-These instructions are generalized, and written on a Mac. You'll need to adapt 
-as necessary if you are working on a different platform.
+These instructions are generalized, and written on a Mac. You'll need to adapt as necessary if you are working on a different platform.
+
+Also, make sure you kill any running packagers for other React Native apps before starting
 
 #### Dependencies
 
@@ -37,10 +36,10 @@ $ react-native run-ios
 
 * You **cannot** add any dependencies or packages.
 * You **cannot** modify any code outside of the `./app` directory.
-* You **can** modify/add/remove code in `./app/components` and 
+* You **can** modify/add/remove code in `./app/components` and
   `./app/containers`.
 * You **cannot** add any files in `./app/reducers` or its subdirectories.
-* You **can** only modify the following files in `./app/reducers` and its 
+* You **can** only modify the following files in `./app/reducers` and its
   subdirectories:
     * `./app/reducers/applicant/applicantSelectors.js`
     * `./app/reducers/skill/skillSelectors.js`
@@ -51,13 +50,15 @@ $ react-native run-ios
 
 See `examples/before.png`.
 
-1. Fix the implementation of `getApplicantsWithSkills` in 
+1. Fix the implementation of `getApplicantsWithSkills` in
   `./app/reducers/applicant/applicantSelectors.js`
 
-  > Currently the implementation returns a list of applicants with an empty set 
+  > Currently the implementation returns a list of applicants with an empty set
   > of skills.
   >
   > However most applicants have skills associated with them.
+  >
+  > If done correctly, this will make the next two problems much simpler
   >
   > **DIFFICULT**: Easy
   >
@@ -67,8 +68,8 @@ See `examples/before.png`.
 
   > We consider an applicant's top skill to be the skill with the most years of
   > experience.
-  > 
-  > For example if Bob has 3 years of experience with PHP, and 5 years of 
+  >
+  > For example if Bob has 3 years of experience with PHP, and 5 years of
   > experience with Objective-C, then Bob's top skill is Objective-C.
   >
   > If the user has no skills, then you can show nothing.
@@ -83,12 +84,12 @@ See `examples/before.png`.
 
 3. Change the sort order of applicants' when the `sortOrder` value changes.
 
-  > Based on the sort order in the redux state, the applicants should be sorted 
+  > Based on the sort order in the redux state, the applicants should be sorted
   > by their total count of skills.
   >
-  > **HINT**: There is a stub function in `applicantSelectors.js` which, if 
+  > **HINT**: There is a stub function in `applicantSelectors.js` which, if
   > implemented correctly, will be all you need to do.
-  > 
+  >
   > **DIFFICULTY**: Medium
   >
   > **EXAMPLE**: `./examples/problem-3-sorted-asc.png`

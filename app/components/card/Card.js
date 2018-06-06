@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-const Card = ({ style, ...restOfProps }) => <View style={[styles.card, style]} {...restOfProps} />;
+const Card = ({ style, ...restOfProps }) =>
+  <View style={[styles.card, style]} {...restOfProps} />;
 
 const styles = StyleSheet.create({
   card: {

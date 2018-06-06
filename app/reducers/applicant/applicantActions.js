@@ -50,6 +50,7 @@ const asyncGetApplicants = () => (dispatch, getState) => {
 
 const applicantActions = Object.freeze({
   asyncGetApplicants,
+  
   getApplicants,
   getApplicantsFail,
   getApplicantsSuccess,
