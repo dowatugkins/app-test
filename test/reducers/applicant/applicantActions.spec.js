@@ -24,7 +24,7 @@ describe('applicantActions', function () {
   });
 
   describe('.getApplicantsSuccess', function () {
-    const response = Object.freeze({ applicants: []});
+    const response = Object.freeze({});
     const subject = applicantActions.getApplicantsSuccess(response);
 
     it('has a payload', function () {
