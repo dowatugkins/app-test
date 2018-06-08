@@ -30,19 +30,24 @@ $ yarn run mock-server
 
 # Start up the application in an iOS simulator
 $ react-native run-ios
+
+# To run the test suite for Problem 4:
+$ yarn test
 ```
 
 ## Rules
 
 * You **cannot** add any dependencies or packages.
-* You **cannot** modify any code outside of the `./app` directory.
+* You **cannot** modify any code outside of the `./app` and `./test` directory.
 * You **can** modify/add/remove code in `./app/components` and
   `./app/containers`.
 * You **cannot** add any files in `./app/reducers` or its subdirectories.
-* You **can** only modify the following files in `./app/reducers` and its
-  subdirectories:
+* You **can** only modify the following files in `./app/reducers` and its subdirectories:
     * `./app/reducers/applicant/applicantSelectors.js`
     * `./app/reducers/skill/skillSelectors.js`
+* You **can** only modify the following files in `./test/reducers` and its    subdirectories:
+    * `./test/reducers/applicant/applicantSelectors.spec.js`
+    * `./test/reducers/skill/skillSelectors.spec.js`
 
 **REMEMBER:** We want to see how well you can work in an existing code base.
 
@@ -95,9 +100,27 @@ See `examples/before.png`.
   > **EXAMPLE**: `./examples/problem-3-sorted-asc.png`
   > **EXAMPLE**: `./examples/problem-3-sorted-desc.png`
 
+4. Update the tests to test any functionality added to `./app/reducers`.
+
+  > We test all functionality that is found in the reducers or lib folders,
+  > so we need to extend the code coverage there to test what you have added.
+  >
+  > **HINT**: Only worry about finishing the test for
+  > `applicantSelectors.getApplicantsWithSkills` and adding tests for any other
+  > methods you chose to add to applicantSelectors, and all methods you added to
+  > `skillSelectors.js`
+  >
+  > **HINT**: Our test suite currently runs on [`Jest`](https://facebook.github.io/jest/en/)
+  >
+  > **HINT**: running `yarn test` in the command line will start Jest
+  >
+  > **DIFFICULTY**: Medium
+
 ## Your Notes
 
 If you have any notes with regards to your solution, leave them below this line.
+
+If you feel the test is unreasonable, please explain your reasoning so we can make the test better by emailing [`jesse@fashionphile.com`](mailto:jesse@fashionphile.com) or [`doug@fashionphile.com`](mailto:doug@fashionphile.com).
 
 <hr>
 
